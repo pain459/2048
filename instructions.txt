@@ -1,0 +1,8 @@
+# Build the image
+docker build -t game-2048 .
+
+# Run the container
+docker run -d -p 8080:80 --name 2048-container game-2048
+
+# Access via browser.
+http://localhost:8080
